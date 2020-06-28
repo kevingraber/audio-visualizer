@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>audio-visualizer</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body style="margin: 0;">
+    <label for="buckets">Buckets</label><input id="buckets" type="number" />
+    <label for="type">Type</label>
+    <select id="type">
+      <option value="bar">Bar</option>
+      <option value="radial">Radial</option>
+    </select>
+    <input id="color-input" type="color" />
+    <canvas
+      id="canvas"
+      style="
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        z-index: -5;
+        left: 0;
+        top: 0;
+      "
+    ></canvas>
+    <audio
+      id="audio"
+      src="Through_The_Crystal.mp3"
+      style="width: 100%;"
+    ></audio>
+
+    <button id="play-button">Play // Pause</button>
+  </body>
+  <script type="text/javascript" src="index.js"></script>
+</html>
